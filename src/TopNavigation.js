@@ -7,7 +7,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 
 import CustomizedSnackbars from './SnackBar.js';
-import EnhancedTable from './Table.js';
+import EnhancedTable from './EnhancedTable.js';
+import CheckboxList from './CheckboxList.js';
 
 function TabContainer(props) {
   return (
@@ -53,8 +54,8 @@ class ScrollableTabsButtonAuto extends React.Component {
             variant="scrollable"
             scrollButtons="auto"
           >
+          <Tab label="Streaming Dienste" />
             <Tab label="Social Media Konten" />
-            <Tab label="Streaming Dienste" />
             <Tab label="Speicherdienste" />
             <Tab label="Software Abos" />
             <Tab label="Fitness-Apps" />
@@ -64,9 +65,9 @@ class ScrollableTabsButtonAuto extends React.Component {
             <Tab label="Sonstige Abos" />
           </Tabs>
         </AppBar>
-        {value === 0 && <TabContainer><CustomizedSnackbars /></TabContainer>}
-        {value === 1 && <TabContainer><EnhancedTable/></TabContainer>}
-        {value === 2 && <TabContainer>Item Three</TabContainer>}
+        {value === 0 && <TabContainer><EnhancedTable/></TabContainer>}
+        {value === 1 && <TabContainer><CheckboxList/></TabContainer>}
+        {value === 2 && <TabContainer><CustomizedSnackbars /></TabContainer>}
         {value === 3 && <TabContainer>Item Four</TabContainer>}
         {value === 4 && <TabContainer>Item Five</TabContainer>}
         {value === 5 && <TabContainer>Item Six</TabContainer>}

@@ -202,7 +202,6 @@ const styles = theme => ({
 class EnhancedTable extends React.Component {
   state = {
     order: 'asc',
-    orderBy: 'calories',
     selected: [],
     data: [
       createData('Apple Video', 'Abo','3 Monate', '20 EUR'),
@@ -220,7 +219,7 @@ class EnhancedTable extends React.Component {
       createData('YouTube Premium', 'Abo','3 Monate', '20 EUR'),
     ],
     page: 0,
-    rowsPerPage: 5,
+    rowsPerPage: 10,
   };
 
   handleRequestSort = (event, property) => {
