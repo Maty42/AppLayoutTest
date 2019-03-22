@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ScrollableTabsButtonAuto from './TopNavigation.js';
+import AppBar from './AppBarNav.js';
 
-ReactDOM.render(<ScrollableTabsButtonAuto />, document.querySelector('#root'));
-
-//ReactDOM.render(<But />, document.querySelector('#app'));
-//ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<PrimaryAppBar/>, document.getElementById('header'));
+ReactDOM.render(<ScrollableTabsButtonAuto />, document.querySelector('#body'));
